@@ -2,6 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './style/app.less';
+import arrowUp from './style/arrow-up.png';
+import arrowDown from './style/arrow-down.png';
+import rocket from './style/rocket.png';
+import starsky from './style/starsky.png';
+import flame from './style/flame_2.png';
 
 let App = React.createClass({
     getInitialState() {
@@ -40,6 +45,7 @@ let App = React.createClass({
 
     render() {
         return (<div className="container" id="hangeer" style={{
+                    backgroundImage: `url(${starsky})`,
                     height: window.innerHeight + 'px',
                     width: window.innerWidth/5 + 'px'
                 }}>
@@ -56,32 +62,47 @@ let App = React.createClass({
                             top: '50%',
                             marginTop: '-75px',
                             marginLeft: '-75px',
-                            backgroundColor: '#ccc'
+                            //backgroundColor: '#ccc',
+                            backgroundImage: `url(${rocket})`,
+                            backgroundSize: '100% 100%',
+                            backgroundRepeat: 'no-repeat'
                         }}>
+
+                        </div>
+                        <div className="flame" style={{
+                               position: 'absolute',
+                               top: '215px',
+                               left: '120px',
+                               width: '50px',
+                               height: '50px',
+                               backgroundImage: `url(${flame})`,
+                               backgroundSize: '100% 100%',
+                               backgroundRepeat: 'no-repeat'
+                            }}>
 
                         </div>
                         <div id="arrow-up" style={{
                             width: '30px',
                             height: '60px',
-                            backgroundColor: '#ccc',
                             float: 'right',
                             color: '#fff',
-                            cursor: 'pointer'
+                            cursor: 'pointer',
+                            backgroundImage: `url(${arrowUp})`
                         }}>
-                            上山啦
+
                         </div>
                         <div id="arrow-down" style={{
                             width: '30px',
                             height: '60px',
-                            backgroundColor: '#ccc',
                             position: 'absolute',
                             top: '100%',
                             right: '0',
                             marginTop: '-60px',
                             color: '#fff',
-                            cursor: 'pointer'
+                            cursor: 'pointer',
+                            backgroundImage: `url(${arrowDown})`
                         }}>
-                            下山啦
+
                         </div>
                     </section>
                 </div>);

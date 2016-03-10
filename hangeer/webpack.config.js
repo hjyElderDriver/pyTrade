@@ -25,7 +25,11 @@ var config = {
         }, {
             test: /\.less$/,
             loader: "style!css!less"
+        }, {
+            test: /\.png$/,
+            loader: "url-loader?mimetype=image/png"
         }]
+
     },
     resolve:{
         extensions:['','.js','.json']
