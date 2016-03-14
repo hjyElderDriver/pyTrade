@@ -69,18 +69,7 @@ let App = React.createClass({
                         }}>
 
                         </div>
-                        <div className="flame" style={{
-                               position: 'absolute',
-                               top: '215px',
-                               left: '120px',
-                               width: '50px',
-                               height: '50px',
-                               backgroundImage: `url(${flame})`,
-                               backgroundSize: '100% 100%',
-                               backgroundRepeat: 'no-repeat'
-                            }}>
 
-                        </div>
                         <div id="arrow-up" style={{
                             width: '30px',
                             height: '60px',
@@ -116,8 +105,6 @@ let appProps = {};
 let app = <App {...appProps}/>;
 
 
-
-
 ReactDOM.render(app, document.body);
 
 /*
@@ -126,4 +113,19 @@ ReactDOM.render(app, document.body);
 *
 *   getInitialState 设置初始状态
 *   componentDidMount 在组件渲染完成后并且有了 DOM 结构之后调用
+* */
+
+/*
+* <div className="flame" style={{
+ position: 'absolute',
+ top: '215px',
+ left: '120px',
+ width: '50px',
+ height: '50px',
+ backgroundImage: `url(${flame})`,
+ backgroundSize: '100% 100%',
+ backgroundRepeat: 'no-repeat'
+ }}>
+
+ </div>
 * */
