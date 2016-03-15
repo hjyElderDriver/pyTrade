@@ -1,0 +1,134 @@
+body {
+  font-size: 18px;
+  font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+}
+
+#road {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+#canvasBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@-webkit-keyframes appear {
+  from {
+   height: 0px;
+   background-color:rgba(130,210,250,0);
+ }
+ to {
+   height: 100%;
+   background-color:rgba(130,210,250,1);
+ }
+}
+@-o-keyframes appear {
+  from {
+   height: 0px;
+   background-color:rgba(130,210,250,0);
+ }
+ to {
+   height: 100%;
+   background-color:rgba(130,210,250,1);
+ }
+}
+@-moz-keyframes appear {
+  from {
+   height: 0px;
+   background-color:rgba(130,210,250,0);
+ }
+ to {
+   height: 100%;
+   background-color:rgba(130,210,250,1);
+ }
+}
+@keyframes appear {
+  from {
+   height: 0px;
+   background-color:rgba(130,210,250,0);
+ }
+ to {
+   height: 100%;
+   background-color:rgba(130,210,250,1);
+ }
+}
+
+@-webkit-keyframes close {
+  from {
+   height: 0px;
+   background-color:rgba(245,90,90,0);
+ }
+ to {
+   height: 100%;
+   background-color:rgba(245,90,90,1);
+ }
+}
+@-o-keyframes close {
+  from {
+   height: 0px;
+   background-color:rgba(245,90,90,0);
+ }
+ to {
+   height: 100%;
+   background-color:rgba(245,90,90,1);
+ }
+}
+@-moz-keyframes close {
+  from {
+   height: 0px;
+   background-color:rgba(245,90,90,0);
+ }
+ to {
+   height: 100%;
+   background-color:rgba(245,90,90,1);
+ }
+}
+@keyframes close {
+  from {
+   height: 0px;
+   background-color:rgba(245,90,90,0);
+ }
+ to {
+   height: 100%;
+   background-color:rgba(245,90,90,1);
+ }
+}
+.intro {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  z-index: 1000;
+  -webkit-animation: appear 3s;
+  -o-animation: appear 3s;
+  -moz-animation: appear 3s;
+  animation: appear 3s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.close {
+  position: absolute;
+  left: 90%;
+  width: 10%;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1000;
+  color: white;
+  font-size: 200%;
+  word-wrap: break-word;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: close 3s;
+  -o-animation: close 3s;
+  -moz-animation: close 3s;
+  animation: close 3s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
